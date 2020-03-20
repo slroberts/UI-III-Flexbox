@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Great Idea! - Contact</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav>
+      <ul class="flex-container">
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Product</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <a href="index.html"> <div class="logo"></div></a>
+      </ul>
+    </nav>
+
+    <section id="contact" class="flex-container">
+      <div class="contact-info">
+        <h1>Contact</h1>
+        <address>
+          123 Way 456 Street Somewhere, USA
+          <a href="#">1 (888) 888-8888</a>
+          <a href="#">sales@greatidea.io</a>
+        </address>
+      </div>
+      <form id="contact-form" action="#">
+        <div class="form-feild">
+          <label for="name">Name <span class="alert">*</span></label
+          ><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John / Jane Doe"
+            required
+          />
+        </div>
+        <div class="form-feild">
+          <label for="email">Email <span class="alert">*</span></label
+          ><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@company.com"
+            required
+          />
+        </div>
+        <div class="form-feild">
+          <label for="message">Message <span class="alert">*</span></label
+          ><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send message!</button>
+      </form>
+    </section>
+    <footer>
+      Copyright Great Idea! 2018
+    </footer>
+  </body>
+</html>
