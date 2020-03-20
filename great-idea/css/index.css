@@ -135,7 +135,7 @@ table {
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -179,6 +179,7 @@ section {
 }
 
 nav {
+  display: flex;
   width: 100%;
   height: 100px;
   padding-top: 40px;
@@ -201,7 +202,6 @@ nav ul {
   color: #aaa;
 }
 
-/* Stretch Goal */
 .nav-link:hover {
   animation: nav 300ms ease-in forwards;
 }
@@ -238,7 +238,7 @@ header {
   font-family: "Bangers", cursive;
 }
 
-.header-left button {
+button {
   border: solid thin #000000;
   padding: 5px 35px;
   font-size: 16px;
@@ -246,8 +246,8 @@ header {
   letter-spacing: 1px;
 }
 
-/* Stretch Goal */
-.header-left button:hover {
+.header-left button:hover,
+#contact-form button:hover {
   animation: skew 400ms ease-in forwards;
 }
 
@@ -287,7 +287,8 @@ header {
   line-height: 18px;
 }
 
-.contact address a {
+.contact address a,
+.contact-info a {
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -299,7 +300,6 @@ footer {
   text-align: center;
 }
 
-/* Services Page CSS */
 .services {
   flex-wrap: wrap;
   border-top: solid thin black;
@@ -373,7 +373,6 @@ footer {
 
 main {
   width: 80%;
-  margin-bottom: 40px;
 }
 
 .product-list {
@@ -403,4 +402,76 @@ main {
 
 .product-item p {
   font-size: 14px;
+}
+
+/* Contact Page CSS */
+#contact {
+  align-items: flex-start;
+  padding-bottom: 120px;
+}
+
+.contact-info {
+  width: 300px;
+}
+
+#contact-form {
+  width: 60%;
+}
+
+.form-feild,
+.form-feild input,
+.form-feild textarea {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.form-feild input,
+.form-feild textarea {
+  padding: 10px;
+  border: solid thin black;
+}
+
+@media screen and (max-width: 900px) {
+  /* General  */
+  body {
+    width: 100%;
+    padding: 30px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-flow: column wrap;
+  }
+
+  nav {
+    padding-bottom: 20px;
+  }
+
+  /* Index */
+
+  .header-left {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
+
+  /* Product */
+  .container {
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  main {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
