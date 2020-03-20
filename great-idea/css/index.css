@@ -300,6 +300,8 @@ footer {
   text-align: center;
 }
 
+/* Services Page CSS */
+
 .services {
   flex-wrap: wrap;
   border-top: solid thin black;
@@ -467,11 +469,24 @@ main {
 
   /* Product */
   .container {
-    justify-content: flex-start;
     flex-direction: column-reverse;
   }
-  main {
+
+  .product-list {
+    align-items: flex-start;
+  }
+
+  main,
+  .product-item {
     width: 100%;
-    justify-content: flex-start;
+  }
+
+  /* Contact */
+  .contact-info {
+    margin-bottom: 40px;
+  }
+
+  #contact-form {
+    width: 100%;
   }
 }
